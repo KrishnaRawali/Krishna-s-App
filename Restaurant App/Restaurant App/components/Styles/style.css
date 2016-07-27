@@ -1,0 +1,62 @@
+footer {
+    position: fixed;
+    right: 0px;
+    bottom:0px;
+    left: 0px;
+    padding: -10rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+    padding: 150px;
+}
+
+
+
+
+body {
+   /* background-image: url("https://flashbackbackslide.files.wordpress.com/2015/09/ratatouille-city.jpg");*/
+    /*/!**!/background-repeat: no-repeat;*/
+    background-size: cover ;
+    max-height: 100%;
+
+}
+
+.font{
+    font-family: cursive;
+    font-size: medium;
+    font-style: italic;
+    font-color: black;
+}
+
+.font1{
+    font-family: cursive;
+    font-size: large;
+    position: relative;
+    font-color: grey;
+    font-style: bold;
+}
+
+.css-form input.ng-invalid.ng-touched{
+    background-color: red;
+}
+
+.css-form input.ng-valid.ng-touched {
+    background-color: blue;
+}
+
+.navbar{
+    background-color: dimgray;
+    font-style:italic;
+    font-family: cursive;
+    font-size: medium;
+    font-color: black;
+
+}
+
+.login{
+    margin-right: 12px;
+}
+
