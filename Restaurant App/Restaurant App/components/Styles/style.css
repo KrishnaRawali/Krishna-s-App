@@ -13,30 +13,39 @@ footer {
     padding: 150px;
 }
 
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+
+}
+
 
 
 
 body {
-   /* background-image: url("https://flashbackbackslide.files.wordpress.com/2015/09/ratatouille-city.jpg");*/
+    background-image: url("https://cdn.royalalberthall.com/file/1396975600/30168545194/width=1280/height=720/format=JPG/fit=crop/crop=0x613+4254x2395/rev=2/t=399992/e=never/k=08451a85/rat-3.jpg");
     /*/!**!/background-repeat: no-repeat;*/
     background-size: cover ;
-    max-height: 100%;
+
+    max-width: 100%;
+    height: auto;
 
 }
-
-.font{
-    font-family: cursive;
-    font-size: medium;
-    font-style: italic;
-    font-color: black;
+@-webkit-keyframes Content {
+    from{background-color: Black}
+    to{background-color: darkblue}
 }
+
 
 .font1{
-    font-family: cursive;
-    font-size: large;
-    position: relative;
-    font-color: grey;
-    font-style: bold;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    position: absolute;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+
 }
 
 .css-form input.ng-invalid.ng-touched{
@@ -48,7 +57,7 @@ body {
 }
 
 .navbar{
-    background-color: dimgray;
+    background-color: black;
     font-style:italic;
     font-family: cursive;
     font-size: medium;
