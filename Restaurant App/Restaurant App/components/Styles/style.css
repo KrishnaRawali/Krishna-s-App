@@ -49,12 +49,10 @@ body {
 }
 
 .css-form input.ng-invalid.ng-touched{
-    background-color: red;
+    background-color: pink;
 }
 
-.css-form input.ng-valid.ng-touched {
-    background-color: blue;
-}
+
 
 .navbar{
     background-color: black;

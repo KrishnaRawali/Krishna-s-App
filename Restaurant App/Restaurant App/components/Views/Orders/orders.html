@@ -7,22 +7,24 @@
 
             <header><label class=" col-sm-2">Select the Date and Time : </label></header>
             <div class="col-sm-4">
-                <input name="date" ng-model=" date" type="datetime-local" class="form-control" required="required"/>
-                <span ng-show = "myForm.date.$touched && myForm.date.$invalid"> Date is required!</span>
+                <input name="date" ng-model=" date" type="datetime-local" class="form-control" required="required" autofocus autocomplete="on"/>
+                <span ng-show = "myForm.date.$untouched && myForm.date.$invalid"> Date is required!</span>
             </div>
         </div>
 
-        <div class="row form-group">
-            <header><label class=" col-sm-2"> Select the range of people:</label></header>
+        <div class="row form-group css-form">
+            <header><label class=" col-sm-2"> Select the range of people: </label></header>
             <div class="col-sm-4">
-                <input type="number" min="1" max="20" class="form-control"/>
+                <input name="range" type="number" ng-model="range" min="1" max="20" class="form-control"/>
+                <span ng-show = "myForm.range.$touched && myForm.range.$invalid">Please enter the range and range should be from 1 to 10 </span>
             </div>
         </div>
-        <div class = "row form-group">
+        <div class = "row form-group css-form">
         <header><label class=" col-sm-2"> Enter the telephone number:</label></header>
 
             <div class="col-sm-4">
-                <input id="tel" type="number" placeholder="xxx_xxx_xxxx" class="form-control"/></div>
+                <input name="number" type="tel" ng-model="number" placeholder="999-999-9999" class="form-control"/></div>
+            <span ng-show="myForm.number.$touched && myForm.number.$invalid">Please enter the best number to reach you</span>
         </div>
     </div>
         <div class="row form-group">
@@ -40,20 +42,25 @@
 
 <aside class="clearfix container-fluid">
     <h3> Owner Login </h3>
+    <header><label for="usermail" class=" col-sm-2 control-label">Email</label></header>
 
 
     <form action="submit" method="get" accept-charset="utf-8" name = "myForm1">
-        <div class="form-group row">
-            <header><label for="usermail" class=" col-sm-2 control-label">Email</label></header>
+        <div class="form-group row css-form">
             <div class="col-sm-4">
-                <input type="email" name="usermail" placeholder="Email" class="form-control" size="30" required/>
+                <input type="email" name="usermail" ng-model="usermail" placeholder="abc@domain.com" class="form-control" size="30" required/>
+                <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+                <span ng-show = "myForm.usermail.$touched && myForm.usermail.$invalid"></span>
+                <span ng-show = "myForm.usermail.$error.required">Email is required</span>
+                <span ng-show = "myForm.usermail.$error.email">Invalid email address</span>
             </div>
         </div>
 
-        <div class="row form-group">
+        <div class="row form-group css-form">
             <header><label for="password" class="col-sm-2 control-label">Password</label></header>
             <div class="col-sm-4">
-                <input type="password" name="password" placeholder="password" class="form-control" required/></div>
+                <input type="password" name="password" ng-model="password" placeholder= aBc$123 class="form-control" required/></div>
+                <span ng-show="myForm.password.$touched && myForm.password.$invalid"></span>
         </div>
         <div class="row">
             <div class="col-sm-offset-2 col-sm-1">
@@ -62,10 +69,10 @@
                 </div>
             </div>
         </div>
-            <div class="row">
-                <div class="col-sm-offset-2 col-sm-10">
+            <div class="row css-form">
+                <div class="col-sm-offset-2 col-sm-1">
                     <a href="#Reservpage.html">
-                        <button type="submit" class="btn btn-primary"/>
+                        <button type="submit"  ng-disabled="myForm.usermail.$dirty && myForm.usermail.$invalid || myForm. password.$dirty  && myForm.password.$invalid " class="btn btn-primary"/>
                         Sign in</button></a>
                 </div>
 
