@@ -2,7 +2,7 @@ angular.module('myApp').controller('menuCtrl', function($scope){
 
 
 
-$scope.Menu1 = [
+$scope.Menu = [
     { Item: ' Veg-Biryani',
         Price: 15.95,
         Description: 'Basmati rice cooked with fresh vegetables and saffron, sprinkled with raisins and nuts ',
@@ -51,10 +51,12 @@ $scope.Menu1 = [
 
 ];
 
-/**
+
+
+    /**
  * Created by sanjeevuma on 22-06-2016.
  */
-$scope.Menu = [
+$scope.Menu1 = [
     { Item: 'Idli',
         Price: 9.95,
         Description: 'Steamed South Indian rice cakes made from fermented rice and black gram batter ',
@@ -113,16 +115,16 @@ $scope.Menu = [
 
 ];
 
-    $scope.Menu3 = [
-        { Item: ' Veg-Biryani',
-            Price: 15.95,
-            Description: 'Basmati rice cooked with fresh vegetables and saffron, sprinkled with raisins and nuts ',
+    $scope.Menu2 = [
+        { Item: 'Chocolate Brownie',
+            Price: 10.95,
+            Description: 'Double Chocolate Brownies with Ganache ',
             canPurchase : false,
             images : [
-                'http://www.rachnas-kitchen.com/wp-content/uploads/2016/02/image-4.jpeg'
+                'http://iadorefood.com/wp-content/uploads/2011/08/Brownie.jpg'
             ]},
         {
-            Item: 'Chicken-Biryani',
+            Item: 'Chocolate lava cake',
             Price: 16.95,
             Description: 'A traditionally cooked Basmati rice with chicken, Indian herbs and garnished with saffron' ,
             canPurchase : false,
@@ -130,37 +132,42 @@ $scope.Menu = [
 
                 'http://www.manjulaskitchen.com/blog/wp-content/uploads/gulab_jamun_2014.jpg',
             ]},
-        { Item: 'Hyderabadi Special dum-biryani',
+        { Item: 'White Chocolate',
             Price: 19.95,
-            Description: 'Chicken marinated with yogurt and spices and cooked with basmati rice',
+            Description: 'White Chocolate Coconut Rasberry cake',
             canPurchase : false,
             images:[
 
-                "https://upload.wikimedia.org/wikipedia/commons/4/46/Kheer.jpg",
+                "https://i.ytimg.com/vi/H92vVGkIhvc/maxresdefault.jpg",
 
             ]
         },
-        { Item: 'Mutton-Biryani',
+        { Item: 'Dark Chocolate Fantasy',
             Price: 19.95,
-            Description: 'Goat marinated with yogurt and spices and cooked with basmati rice',
+            Description: 'Irresistible dark chocolate',
             canPurchase : false,
             images:[
-                'http://www.guyanadining.com/wp-content/uploads/2015/08/rasgulla.jpg',
+                'https://s-media-cache-ak0.pinimg.com/236x/39/78/61/39786158ae71e733e11d70d93454aafd.jpg',
 
             ]
         },
-        { Item: 'Shrimp-Biryani',
+        { Item: 'Choco Nuts Upside down Cake',
             Price: 19.95,
-            Description: 'Tiger shrimp cooked with Basmati rice and spices, garnished with dried nuts',
+            Description: 'Tender upside down cakes',
             canPurchase : false,
             images:[
 
-                'http://www.managodavarisweets.com/wp-content/uploads/2015/07/bobbatlu_main.jpg',
+                'http://www.finecooking.com/cms/uploadedimages/images/cooking/articles/issues_41-50/fc47do087-01_xlg.jpg',
 
             ]
         },
 
     ];
+
+
+
+
+
 
 
 });
